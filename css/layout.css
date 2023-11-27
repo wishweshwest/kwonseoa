@@ -1,0 +1,523 @@
+@import 'reset.css';
+
+/* font */
+
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoKR-Light.woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoKR-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoKR';
+    src: url('../font/NotoKR-Medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'IvarDisplayCondensed';
+    src: url('../font/IvarDisplayCondensed-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .header_inner {
+    padding: 0 50px;
+    height: 100%;
+}
+
+
+/* common */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cursor {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+i.red_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #eb2141;
+    position: absolute;
+}
+
+i.red_circle.mini {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #eb2141;
+    background: #fff;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.wrap_container {
+    padding-top: 350px;
+    padding-bottom: 500px;
+}
+
+.inner {
+    max-width: 1510px;
+    padding: 0 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.port_area .title {
+    color: #f9f9f9;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    writing-mode: tb;
+    font-size: 9.25vw;
+    white-space: nowrap;
+    pointer-events: none;
+    text-shadow: -1px 0 #A9A9A9, 0 1px #A9A9A9, 1px 0 #A9A9A9, 0 -1px #A9A9A9;
+    font-weight: 700;
+    z-index: 1;
+    opacity: 0;
+
+    font-family: 'IvarDisplayCondensed', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.port_area .title::after {
+    text-shadow: -1px 0 #f9f9f9, 0 1px #f9f9f9, 1px 0 #f9f9f9, 0 -1px #f9f9f9;
+}
+
+
+
+/* wrap_container */
+
+main {
+    position: relative;
+}
+
+
+/* sc_profile */
+
+.sc_profile * {
+    font-size: 16px;
+    color: #222;
+}
+
+
+
+/* sc_profile */
+
+.sc_profile {
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    /* padding: 100px 50px; */
+    box-shadow: 0px 0px 8px 0px #d2d2d2;
+}
+
+.sc_profile .inner_2::before {
+
+
+    /* content: '';
+    background-color: #fff;
+    width: 200%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    overflow: hidden;
+    transform: skew(0, -1.9deg);
+    box-shadow: 0px 0px 8px 0px #d2d2d2; */
+
+    
+}
+
+
+/* footer */
+
+footer .inner {
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+footer * {
+    font-family: 'Poppins',sans-serif;
+    color: #717171;
+    letter-spacing: -0.05em;
+}
+
+footer h3 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+footer .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .left_wrap p,
+footer .left_wrap a {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.71;
+}
+
+footer .right_wrap {
+    align-self: flex-end;
+}
+
+footer .right_wrap p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+
+@media screen and ( max-width:1440px ) {
+
+    /*header*/
+
+    header .header_inner {
+        padding: 0 3.47vw;
+    }
+
+
+    /* common */
+
+    .cursor {
+        top: 3.47vw;
+        left: 3.47vw;
+        width: 6.94vw;
+        height: 6.94vw;
+    }
+
+    i.red_circle {
+        width: 0.69vw;
+        height: 0.69vw;
+    }
+
+    i.red_circle.mini {
+        width: 0.69vw;
+        height: 0.69vw;
+        border: 2px solid #eb2141;
+    }
+
+    .wrap_container {
+        padding-top: 24.31vw;
+        padding-bottom: 34.72vw;
+    }
+
+    .inner {
+        max-width: 104.86vw;
+        padding: 0 3.47vw;
+    }
+
+    .port_area .title {
+        font-size: 9.25vw;
+        text-shadow: -1px 0 #A9A9A9, 0 1px #A9A9A9, 1px 0 #A9A9A9, 0 -1px #A9A9A9;
+    }
+
+    .port_area .title::after {
+        text-shadow: -1px 0 #f9f9f9, 0 1px #f9f9f9, 1px 0 #f9f9f9, 0 -1px #f9f9f9;
+    }
+
+
+    /* sc_profile */
+
+    .sc_profile {
+        /* padding: 6.94vw 3.47vw; */
+    }
+
+    .sc_profile * {
+        font-size: 1.11vw;
+    }
+
+    
+    /* footer */
+
+    footer .inner {
+        padding-top: 6.94vw;
+        padding-bottom: 20.83vw;
+    }
+
+    footer h3 {
+        margin-bottom: 2.78vw;
+        font-size: 3.13vw;
+    }
+
+    footer .left_wrap p,
+    footer .left_wrap a {
+        font-size: 2.43vw;
+    }
+
+    footer .right_wrap p {
+        font-size: 1.32vw;
+    }
+
+}
+
+@media screen and ( max-width:768px ) {
+
+    .cursor {
+        display: none;
+    }
+
+    /*header*/
+
+    header .header_inner {
+        position: relative;
+        padding: 0 6.51vw;
+        height: 15.63vw;
+    }
+
+
+    /* common */
+
+    .cursor {
+        top: 6.51vw;
+        left: 6.51vw;
+        width: 13.02vw;
+        height: 13.02vw;
+    }
+
+    i.red_circle {
+        width: 1.30vw;
+        height: 1.30vw;
+    }
+
+    i.red_circle.mini {
+        width: 1.30vw;
+        height: 1.30vw;
+        border: 1px solid #eb2141;
+    }
+
+    .wrap_container {
+        padding-top: 39.06vw;
+        padding-bottom: 65.10vw;
+    }
+
+    .inner {
+        max-width: 196.61vw;
+        padding: 0 6.51vw;
+    }
+
+    .port_area .title {
+        font-size: 9vw;
+        position: static;
+        transform: rotate(0);
+        writing-mode: horizontal-tb;
+        padding-bottom: 1.30vw;
+        bottom: 0;
+        left: auto;
+        right: 15%;
+        z-index: 2;
+    }
+
+    .port_area .title::after {
+        text-shadow: -1px 0 #f9f9f9, 0 1px #f9f9f9, 1px 0 #f9f9f9, 0 -1px #f9f9f9;
+    }
+
+
+    /* sc_profile */
+
+    .sc_profile {
+        height: auto;
+    }
+
+    .sc_profile * {
+        font-size: 2.08vw;
+        /* letter-spacing: -0.03em; */
+        /* line-height: 1.9; */
+    }
+
+    .sc_profile::before {
+        display: none;
+    }
+
+    
+    /* footer */
+
+    footer .inner {
+        padding-top: 13.02vw;
+        padding-bottom: 39.06vw;
+    }
+
+    footer .wrap {
+        display: block;
+    }
+
+    footer h3 {
+        margin-bottom: 5.21vw;
+        font-size: 5.86vw;
+    }
+
+    footer .left_wrap p,
+    footer .left_wrap a {
+        font-size: 4.56vw;
+    }
+
+    footer .right_wrap {
+        padding-top: 6.51vw;
+    }
+
+    footer .right_wrap p {
+        font-size: 2.47vw;
+    }
+
+
+
+
+
+}
+
+@media screen and ( max-width:320px ) {
+
+    /*header*/
+
+    header .header_inner {
+        padding: 0 21px;
+        height: 50px;
+    }
+
+
+    /* common */
+
+    .cursor {
+        top: 21px;
+        left: 21px;
+        width: 42px;
+        height: 42px;
+    }
+
+    i.red_circle {
+        width: 4px;
+        height: 4px;
+    }
+
+    i.red_circle.mini {
+        width: 4px;
+        height: 4px;
+    }
+
+    .wrap_container {
+        padding-top: 125px;
+        padding-bottom: 208px;
+    }
+
+    .inner {
+        max-width: 629px;
+        padding: 0 21px;
+    }
+
+    .port_area .title {
+        font-size: 29px;
+        padding-bottom: 4px;
+    }
+
+
+    /* sc_profile */
+
+    .sc_profile * {
+        font-size: 7px;
+    }
+
+    
+    /* footer */
+
+    footer .inner {
+        padding-top: 42px;
+        padding-bottom: 125px;
+    }
+
+    footer h3 {
+        margin-bottom: 17px;
+        font-size: 19px;
+    }
+
+    footer .left_wrap p,
+    footer .left_wrap a {
+        font-size: 15px;
+    }
+
+    footer .right_wrap {
+        padding-top: 21px;
+    }
+
+    footer .right_wrap p {
+        font-size: 8px;
+    }
+
+
+}

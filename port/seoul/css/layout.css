@@ -1,0 +1,214 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothic-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../font/NanumGothic-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NanumGothic';
+    overflow-x: hidden;
+}
+
+.inner {
+    width: 1272px;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+header a {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.pt50 {
+    padding-top: 50px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.line_top_black {
+    border-top: 2px solid #222222;
+}
+
+.line_bottom_gray {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.line_bottom_gray_bold {
+    border-bottom: 2px solid #dbdbdb;
+}
+
+header .top_area h1.logo::after,
+header .search_area .center_wrap button::after,
+.sc_visual .wrap .custom_btn_wrap .btn_wrap .swiper_button_prev::after,
+.sc_visual .wrap .custom_btn_wrap .btn_wrap .swiper_button_next::after,
+.sc_visual .wrap .custom_btn_wrap .btn_wrap .pause_wrap .auto_start::after,
+.sc_visual .wrap .custom_btn_wrap .btn_wrap .pause_wrap .auto_stop::after,
+.title_wrap h2 + a.plus::after,
+.title_wrap h2 + a.plus0::after,
+.sc_slide .custom_btn_wrap .btn_wrap .swiper_button_prev::after,
+.sc_slide .custom_btn_wrap .btn_wrap .swiper_button_next::after,
+.sc_slide .custom_btn_wrap .btn_wrap .pause_wrap .auto_start::after,
+.sc_slide .custom_btn_wrap .btn_wrap .pause_wrap .auto_stop::after,
+footer .footer_last .left_wrap a::after {
+    content: '';
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 300px;
+}
+
+header .search_area .left_wrap::after {
+    content: '';
+    background-image: url(../img/sprite1.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 180px;
+}
+
+.sc_visual .slide_area button.news::before,
+.sc_visual .slide_area.slide_content02 button::before {
+    content: '';
+    background-image: url(../img/sprite5.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: 300px;
+}
+
+
+.desc_shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.desc_shadow p {
+    font-size: 14px;
+    color: #fff;
+    padding: 13px 15px 13px 15px;
+    position: relative;
+    letter-spacing: 0.02em;
+    z-index: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.desc_shadow::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title_wrap {
+    position: relative;
+}
+
+.title_wrap h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.title_wrap h2.mb20 {
+    margin-bottom: 20px;
+}
+
+.title_wrap h2 + a.plus0::after {
+    background-position: -1px -1px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+    border: 1px solid #ddd;
+}
+
+.title_wrap h2 + a.plus::after {
+    background-position: -63px -259px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* three_wrap */
+
+.three_wrap ul li {
+    padding: 8px 0 8px 0;
+    overflow: hidden;
+}
+
+.three_wrap ul li em , 
+.three_wrap ul li a {
+    font-size: 15px;
+    vertical-align: top;
+    float: left;
+}
+
+.three_wrap ul li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 9px;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 20px;
+}
+
+/* skipnavi */
+
+.skipnavi {
+    text-align: center;
+}
+
+.skipnavi a {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 15px;
+    background: #333;
+    color: #fff;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.skipnavi a:active, .skipnavi a:focus {top:0;}

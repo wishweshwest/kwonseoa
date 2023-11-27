@@ -1,0 +1,158 @@
+@import "reset.css";
+
+.inner {
+    width: 1190px;
+    padding:0 30px;
+    margin: 0 auto;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+header .bottom_wrap h1 a::after,
+header .bottom_wrap .search button::after,
+header .top_wrap .start::after,
+header .gnb_area .gnb_wrap ul li .mail::before,
+main .sc_news .left_wrap em::after,
+main .sc_stand .title .stand::before,
+main .sc_stand .title .stand::after,
+main .sc_stand .right_wrap .ico_list::after,
+main .sc_stand .right_wrap .ico_gall::after,
+main .sc_stand .right_wrap .ico_set::after,
+main .content_wrap button.prev,
+main .content_wrap button.next,
+main .sc_cast .title .right_wrap .set::before,
+main .sc_cast .list_wrap button.prev,
+main .sc_login button::before,
+main .sc_login .id_ico::before,
+main .sc_login .login_desc .join_ico::before,
+main .sc_issue .right_wrap button.prev::before,
+main .sc_issue .right_wrap button.next::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/sp_bg.png);
+    background-size: 444px;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+main .sc_shopping .title_wrap .left_wrap a.trand::before,
+main .sc_shopping .title_wrap .left_wrap a.trand::after,
+main .sc_shopping .navi button.prev::before,
+main .sc_shopping .navi button.next::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/sp_bg2.png);
+    background-repeat: no-repeat;
+    background-size: 107px;
+    padding: 0;
+}
+
+main .left_area {
+    width: 750px;
+    float: left;
+    margin-right: 30px;
+}
+main .right_area {
+    width: 350px;
+    float: right;
+    vertical-align: top;
+}
+
+.black_line a {
+    position: relative;
+}
+
+.black_line a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+
+.line_gray {
+    border: 1px solid #dae1e6;
+}
+
+.bg_gray {
+    background-color: #f7f9fa;
+}
+
+main a, main p, main strong, main em, main span, main button {
+    font-size: 13px;
+}
+
+main .sc_cast a, main .sc_cast p, main .sc_cast strong, main .sc_cast em, main .sc_cast span,
+main span, main em, footer a, footer p, footer strong, footer em, footer span {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+main em {
+    font-weight: bold;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.vet_line {
+    background: #000;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #dae1e6;
+}
+
+.vet_line.vt1 {
+    left: 124px;
+}
+
+.vet_line.vt2 {
+    left: 248px;
+}
+
+.vet_line.vt3 {
+    left: 372px;
+}
+
+.vet_line.vt4 {
+    left: 497px;
+}
+
+.vet_line.vt5 {
+    left: 622px;
+}
+
+.hor_line {
+    width: 100%;
+    height: 1px;
+    background: #dae1e6;
+    position: absolute;
+    left: 0;
+}
+
+.hor_line.ht1 {
+    top: 65px;
+}
+
+.hor_line.ht2 {
+    top: 130px;
+}
+
+.hor_line.ht3 {
+    top: 195px;
+}
