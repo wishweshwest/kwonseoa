@@ -33,7 +33,15 @@ main .sc_login button::before,
 main .sc_login .id_ico::before,
 main .sc_login .login_desc .join_ico::before,
 main .sc_issue .right_wrap button.prev::before,
-main .sc_issue .right_wrap button.next::before {
+main .sc_issue .right_wrap button.next::before,
+header .gnb_area .gnb_wrap ul li .shopping::before,
+header .gnb_area .gnb_wrap ul li .shopping_live::before,
+header .gnb_area .gnb_wrap ul li a.more::after,
+header .gnb_area .weather .exp::before,
+.more_btn button::before,
+header .top_wrap .junior::after,
+header .top_wrap .bin::after,
+footer .notice_area .right_wrap::after {
     content: '';
     display: inline-block;
     background-image: url(../img/sp_bg.png);
@@ -81,6 +89,8 @@ main .right_area {
 }
 
 .line_gray {
+    /* border-left: 1px solid #dae1e6;
+    border-right: 1px solid #dae1e6; */
     border: 1px solid #dae1e6;
 }
 
@@ -155,4 +165,52 @@ main em {
 
 .hor_line.ht3 {
     top: 195px;
+}
+
+.line_gray_top {
+    border-top: 1px solid #e4e8eb;
+}
+
+.line_gray_bottom {
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.after_one {
+    position: relative;
+    padding-right: 10px;
+}
+
+.after_one::after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin: 0 5px;
+}
+
+.right_area .green {
+    color: #03c75a;
+    font-weight: 700;
+    border-bottom: 2px solid #19ce60;
+}
+
+
+.obj.list_border {
+    position: relative;
+}
+
+.obj.list_border::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+    content: '';
 }
