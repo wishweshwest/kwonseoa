@@ -1197,22 +1197,30 @@ footer .footer_last .right_wrap {
 
 /* top_btn */
 
+#topBtn {
+    position: fixed;
+    /* bottom: 100px; */
+    bottom: -100px;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    margin-left: 650px;
+
+    transition: 1s;
+    opacity: 0;
+    z-index: 30;
+}
+
 #topBtn::after {
     content: '';
     background-image: url(../img/btn_top.png);
     background-repeat: no-repeat;
-    width: 34px;
-    height: 34px;
+    width: 100%;
+    height: 100%;
     display: block;
-    position: fixed;
-    /* bottom: 100px; */
-    bottom: -100px;
-    right: 280px;
-    transition: 1s;
-    opacity: 0;
 }
 
-#topBtn.on::after {
-    bottom: 100px;
+#topBtn.on {
+    bottom: 150px;
     opacity: 1;
 }
