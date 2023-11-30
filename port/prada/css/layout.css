@@ -36,6 +36,7 @@ body {
     font-size: 14px;
     letter-spacing: -0.01em;
     overflow-x: hidden;
+    min-width: 320px;
 }
 
 
@@ -264,6 +265,13 @@ address.white {
     top: -67px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+    
+.motion {
+    transform: translateY(200px);
+    opacity: 0;
 }
 
 
@@ -651,7 +659,8 @@ footer::before {
         font-size: 13px;
         margin-bottom: 22px;
     }
-    
+
+
     /* footer */
     
     footer {

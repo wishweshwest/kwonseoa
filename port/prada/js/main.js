@@ -144,5 +144,28 @@ $(function(){
             })
         })
       
+
+
+    
+
+
+        $('.up_motion').each(function(index,item){
+
+            let motion = $(this).find('.motion');
+
+            gsap.to(motion,{
+                scrollTrigger:{
+                    trigger: item,
+                    start: "20% 70%",
+                    end: "60% 100%",
+                    markers: true,
+                },
+                y : 0,
+                opacity : 1,
+            })
+
+        });
+
+        
     
 });
