@@ -930,7 +930,8 @@ header .gnb_area li.on .sub a {
         .sc_port02 .title::after,
         .sc_port03 .title::after,
         .sc_port04 .title::after,
-        .sc_port05 .title::after {
+        .sc_port05 .title::after,
+        .sc_port06 .title::after {
             display: none;
         }
     
