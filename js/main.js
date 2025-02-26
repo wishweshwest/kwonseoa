@@ -95,7 +95,15 @@ $(function(){
         'background':'#450003',
     })
 
-
+    gsap.to('main .wrap_container',{
+        scrollTrigger:{
+            trigger:'.sc_port06',
+            start:"-15% 20%",
+            end:"50% 80%",
+            scrub:1,
+        },
+        'background':'#CDD5E0',
+    })
 
 
 

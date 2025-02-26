@@ -223,11 +223,12 @@ header .gnb_area li.on .sub a {
     display: block;
     font-size: 19px;
     margin-bottom: 40px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     position: relative;
 }
 
 .port_area .desc_wrap em::before {
+    display: none;
     content: '';
     width: 7px;
     height: 7px;
@@ -242,6 +243,10 @@ header .gnb_area li.on .sub a {
 .port_area .desc_wrap p {
     line-height: 2;
     font-size: 16px;
+}
+
+.port_area .desc_wrap p + p {
+    margin-top: 20px;
 }
 
 .port_area .desc_wrap h3,
@@ -466,6 +471,18 @@ header .gnb_area li.on .sub a {
 }
 
 
+/* sc_port06 */
+
+.sc_port06 .title::after {
+    content: 'DUVETICA';
+    color: #CDD5E0;
+}
+
+.sc_port06.port_area .img_wrap img {
+    transition: 4s linear;
+}
+
+
 
 @media screen and ( max-width:1440px ) {
     
@@ -542,7 +559,7 @@ header .gnb_area li.on .sub a {
     .port_area .desc_wrap em {
         font-size: 1.32vw;
         margin-bottom: 2.78vw;
-        padding-left: 1.39vw;
+        /* padding-left: 1.39vw; */
     }
 
     .port_area .desc_wrap em::before {
@@ -552,6 +569,10 @@ header .gnb_area li.on .sub a {
 
     .port_area .desc_wrap p {
         font-size: 1.11vw;
+    }
+
+    .port_area .desc_wrap p + p {
+        margin-top: 1.39vw;
     }
 
 
@@ -881,7 +902,7 @@ header .gnb_area li.on .sub a {
         .port_area .desc_wrap em {
             font-size: 2.47vw;
             margin-bottom: 5.21vw;
-            padding-left: 2.60vw;
+            /* padding-left: 2.60vw; */
         }
     
         .port_area .desc_wrap em::before {
@@ -891,6 +912,10 @@ header .gnb_area li.on .sub a {
     
         .port_area .desc_wrap p {
             font-size: 2.08vw;
+        }
+
+        .port_area .desc_wrap p + p {
+            margin-top: 2.60vw;
         }
 
         .port_area .img_wrap a::after {
@@ -1104,7 +1129,7 @@ header .gnb_area li.on .sub a {
     .port_area .desc_wrap em {
         font-size: 8px;
         margin-bottom: 17px;
-        padding-left: 8px;
+        /* padding-left: 8px; */
     }
 
     .port_area .desc_wrap em::before {
@@ -1114,6 +1139,10 @@ header .gnb_area li.on .sub a {
 
     .port_area .desc_wrap p {
         font-size: 7px;
+    }
+
+    .port_area .desc_wrap p + p {
+        margin-top: 8px;
     }
 
 
