@@ -157,6 +157,15 @@ $(function(){
         })
     })
 
+    $('.sc_port06 .img_wrap').mouseover(function(){
+        gsap.to('.cursor',{
+            scale:1.3,
+            backgroundColor:'#CDD5E0',
+            duration:0.2,
+        })
+    })
+
+
     $('.port_area .img_wrap').mouseleave(function(){
         gsap.to('.cursor',{
             scale:1,
@@ -300,6 +309,16 @@ $(function(){
                     scrub:1,
                 },
                 'background':'#450003',
+            })
+
+            gsap.to('main .wrap_container',{
+                scrollTrigger:{
+                    trigger:'.sc_port06',
+                    start:"top 20%",
+                    end: "20% 30%",
+                    scrub:1,
+                },
+                'background':'#CDD5E0',
             })
 
 
