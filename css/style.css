@@ -394,8 +394,6 @@ header .gnb_area li.on .sub a {
 
 /* sc_port01 */
 
-.sc_port01 {}
-
 .sc_port01 .desc_wrap {
     background-image: url(../img/desc01.png);
 }
@@ -479,7 +477,7 @@ header .gnb_area li.on .sub a {
 }
 
 .sc_port06.port_area .img_wrap img {
-    transition: 8s linear;
+    transition: 4s linear;
 }
 
 
