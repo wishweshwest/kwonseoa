@@ -176,6 +176,10 @@ header .gnb_area li.on .sub a {
     left: 0;
 }
 
+.sc_port06.port_area .img_wrap img {
+    transition: 1.5s linear;
+}
+
 .port_area .img_wrap a:hover::after {
     opacity: 0;
     visibility: hidden;
